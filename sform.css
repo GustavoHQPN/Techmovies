@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  }
+  body{  
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100px;
+      background-color: #202225;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+  }
+  
+  div {
+    position: relative;
+}
+  p{
+      color:cyan;
+      font-size: 16px;
+  }
+  .logo{
+    margin-top: -135px;
+  }
+ .box-form{
+  background-color:rgb(56, 56, 56);
+  padding: 32px;
+  width: 800px;
+  height: 550px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: -110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .form-content{
+  margin-top: -80px;
+width: 60%;
+background-color: rgb(56, 56, 56);
+
+ }
+ .form-content .titulo{
+  font-size: 30px;
+  color:cyan;
+  font-weight: 700; 
+  text-align: center;
+  margin-bottom: 5px ;
+ }
+
+ .form-content .subtitulo{
+  text-align: center;
+  color:cyan;
+ }
+  .form-content form{
+      margin-top: 15px;
+
+  }
+    .form-content .form-input{
+    margin-top: 20px;
+    } 
+    /*OLHO DA SENHA*/
+    .lnr-eye {
+      position: absolute;
+      cursor: pointer;
+      top: 40px;
+      right: 10px;
+  }
+  /*OLHO DA SENHA*/
+  input {
+    border-radius: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+    .form-content label{
+      color:cyan;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .form-content input{
+      padding: 10px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 400 ;
+      width: 100%;
+      border-radius: 3px;
+      outline: none;
+      border:none;
+      background-color: #202225;
+      color:#dcddde;
+      margin-top: 8px;
+    }
+    
+    .form-content .forget-password-link{
+      margin-top: 4px;
+    }
+    .form-content .forget-password-link a{
+     color:#00aff4;
+     font-size: 14px;
+     font-weight: 500;
+    }
+    .form-content .forget-password-link a:hover{
+      text-decoration: underline;
+     }
+    .form-content button{
+      height: 48px;
+      width: 100%;
+      padding: 2px 16px;
+      border-radius: 3px;
+      font-size: 16px;
+      border:none;
+      outline: none;
+      background-color: #00ffff  ;
+      text-shadow: 1px  #202225;
+      cursor: pointer;
+      margin-top: 28px;
+  }
+  .form-content button:hover{
+    background-color: #00ffff;
+    transform: scale(1.02);
+    transition: .08s;
+    box-shadow: 0 0 50px #14e4ff;
+    font-style: bold;
+}
+
+  .form-content .register-link{
+      margin-top: 13px;
+      font-size: 14px;
+  }
+  .form-content .register-link a{
+      color:#00aff4;
+  }
+  .form-content .register-link a:hover{
+      text-decoration: underline;
+}
+  .form-qrcode{
+      width: 40%;
+      margin-left: 68px;
+      text-align: center;
+      color:cyan;
+  }
+  .form-qrcode h2{
+      font-size: 38px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .form-qrcode img{
+    margin-top: 30px;
+  }

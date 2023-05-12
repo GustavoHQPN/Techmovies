@@ -1,0 +1,178 @@
+:root {
+    --color-background: #2c3541;
+    --color-text-primary: #FFFFFF;
+    --color-text-title: #E50914;
+    --color-text-main: #AAA;
+    --color-background-button: #FFFFFF;
+    --color-text-button: #141414;
+}
+
+/* resetando alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/* elementos base */
+body {
+    background: #2c3541;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-primary);
+}
+body header{
+    background-color: #202930;
+}
+.container a {
+    margin-right: 100px;
+}
+header .container {
+    display: flex;
+    flex-direction: row; /* coloca o menu ao lado da logo */
+    align-items: center; /* alinhando o menu ao centro do container */
+    justify-content: space-between;
+    height: 100px;   
+}
+.container .logo{
+    width: 300px;
+}
+.user{  
+    width: 80px;
+    margin-right: 50px;
+}
+.navitem:hover{
+    border: 2px solid #13cfc0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: #112733;
+}
+
+.logo {
+    margin-left: -50px; /* espaçamento entre o lado esquerdo da tela e a logo */
+}
+
+header nav a {
+    text-decoration: none; /* removendo o sublinhado do link dos menus */
+    margin-right: 10px;
+    color: var(--color-text-main);
+}
+
+header nav a:hover {
+    color: var(--color-text-primary);
+}
+
+.botao{
+    margin-top: 10px;
+    margin-right: -48%;
+    background-color: #2c3541;
+    color: #dbdbdb;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px #13cfc0;
+    padding: 2px 5px;
+}
+/*===============================================================*/
+/* Estilo das estrelas */   
+.rating{
+    margin-top: -12px;
+    position: absolute;
+    left: 27.2%;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    display: flex;
+  }
+
+a .botao:hover{
+    background-color:#000000;
+    transition: 0.7s;
+    cursor: pointer;
+}
+  .rating input{
+    display: none;
+}
+  
+  .rating label{
+      display: block;
+      cursor: pointer;
+      width: 20px;
+  }
+  
+  .rating label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    color: #0e1316;
+  }
+  
+  .rating label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    color: #ffd700;
+    top: 0;
+    opacity: 0;
+    transition: .5;
+    text-shadow: 0 4px 5px #00000080;
+  }
+  .rating label:hover:after,
+  .rating label:hover ~ label:after,
+  .rating input:checked ~ label:after{
+    opacity: 1;
+  }
+/*===============================================================*/
+
+/* início da estilização do footer */
+.baseboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;    
+    margin-top: 100px;
+    margin-bottom: -50px;
+    height: 200px;
+    background-color: #141414;
+}
+.filme{
+    margin-top: 100px;
+    width: 800px;
+    border: #000000 solid 10px;
+    height: 500px;
+}
+.comentario{
+    background-color: #dbdbdb;
+    margin-top: 50px;
+    width: 800px;
+    height: 140px;
+    resize: none;
+    padding: 5px;
+    border: #000000 solid 2px;
+}
+.baseboard a {
+    color: var(--color-text-primary);
+}
+/* fim da estilização do footer */
+
+/* responsivo */
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .description {
+        width: 50%;
+    }
+}

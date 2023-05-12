@@ -1,0 +1,440 @@
+:root {
+    --color-background: #2c3541;
+    --color-text-primary: #FFFFFF;
+    --color-text-title: #E50914;
+    --color-text-main: #AAA;
+    --color-background-button: #FFFFFF;
+    --color-text-button: #141414;
+}
+
+/* resetando alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/* elementos base */
+body {
+    background: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-primary);
+}
+body header{
+    background-color: #202930;
+}
+header .container {
+    display: flex;
+    flex-direction: row; /* coloca o menu ao lado da logo */
+    align-items: center; /* alinhando o menu ao centro do container */
+    justify-content: space-between;
+    height: 100px;
+       
+}
+.container .log{
+    width: 25%;
+    height: auto;
+    size: 10px;
+    margin-left: 30%;
+}
+
+.container .react{
+    width: 23%;
+    margin-top: -1.7%;
+    height: auto;
+    margin-right: -14%;
+
+}
+
+
+    
+.divBarraPesquisa{
+    margin-right: 4%;
+    height: 25px;
+    padding: 25px;
+    border-radius: 40px;
+    background:rgba(14, 186, 209, 0.623) ;
+    box-shadow: 1px 2px 4px rgb(0, 225, 255) ;
+    display: flex;
+    
+    align-items: center;
+    }
+
+
+    .barraPesquisa{
+        border:none;
+        background: none;
+        outline: none;
+        padding: 0;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 2px 4px rgb(255, 255, 255);
+        font-size: 16px;
+        line-height: 40px;
+        width: 0;
+        transition: .4s;
+        font-family:'Source Sans Pro' ;
+        }
+
+        ::-webkit-input-placeholder{
+            color:rgb(255, 255, 255);
+        }
+        
+        .botaoBarraPesquisa{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+        
+        
+        .divBarraPesquisa:hover > .barraPesquisa{
+        width: 220px;
+        padding: 0 6px;
+}
+
+
+.navitem:hover{
+    border: 2px solid #13cfc0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: #112733;
+}
+/*caixa de pesquisa*/
+#divBusca{
+    background-color:#1a1b1b;
+    border:solid 1px;
+    border-radius:15px;
+    margin-right: 0px;
+    opacity: 0.9;
+    right: -10px;
+  }
+  
+ #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    height:32px;
+    border: none;
+}
+#txtBusca:active{
+    border: none;
+}
+#btnBusca{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/*caixa de pesquisa*/
+div .main-movie{
+    height: 50px;
+}
+main .main-movie{
+    height: 500px;
+}
+.log {
+    margin-left: -200px; /* espaçamento entre o lado esquerdo da tela e a logo */
+}
+
+header nav a {
+    text-decoration: none; /* removendo o sublinhado do link dos menus */
+    margin-right: 10px; /* espaçamento entre o menu e o lado direito da tela e ente eles */
+    color: var(--color-text-main);
+}
+
+header nav a:hover {
+    color: var(--color-text-primary);
+}
+
+/* elementos do filme principal */
+
+
+.main-movie{
+    font-size: 16px;
+    background-image:url('PlanoFundoCronos.jpg');
+    height: auto;
+    width: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.main-movie .title-movie {
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.main-movie .container {
+    width: 70%;
+    background-color: #3434344d;
+}
+
+.button {
+    background-color: rgba(0,0,0,0.50);
+    border: none;
+    color: var(--color-text-primary);
+    padding: 15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.button:hover {
+    background-color: var(--color-background-button);
+    color: var(--color-text-button);
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carousel-movie {
+    margin-top: 5px;
+}
+
+/* início da estilização do footer */
+.baseboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;    
+    margin-top: 25px;
+    margin-bottom: -15px;
+    height: 200px;
+    background-color: #141414;
+}
+
+.baseboard a {
+    color: var(--color-text-primary);
+    
+}
+/* fim da estilização do footer */
+
+/* responsivo */
+@media screen and (max-width: 700px) {
+    
+
+    .container .log{
+        width: 35%;
+    }
+    .main-movie .title-movie {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .navlist li{
+        font-size: 12px;
+    }
+    .navlist{
+        margin-left: 500px;
+    }
+    header .container {
+        display: flex;
+        
+        
+    }
+
+    .button {
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .description {
+        width: 50%;
+    }
+}
+.navbar{
+    justify-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*barrinha de pesquisa*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background: #202930;
+    height: 8vh;
+
+}
+
+
+.navlist{
+    list-style: none;
+    display: flex;
+    
+}
+.navlist li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navlist li {   
+    letter-spacing: 4px;
+    
+}
+
+.menu {
+    display: none;  
+    cursor: pointer;
+}
+.menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+margin-right: 90%;
+}
+
+    .quadrado img{
+        height: 50%;
+        width: 50%;
+        
+    }
+    
+    .logo{
+        width: 50%;
+    }
+
+ 
+
+
+    .navlist li {
+        opacity: 0;
+    }
+    .menu {
+        display:block;
+        position: absolute;
+        margin-right: 85%;
+
+    }
+    
+
+
+
+
+    body{
+        overflow-x: hidden;
+        
+    }
+  
+    .navlist{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        margin-right: 70%;
+        width: 30%;
+        height: 500px;
+        background: #202930;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(-140%);
+        transition: transform 0.5s ease-in;
+    }
+
+
+
+
+
+.navlist.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+    from{
+    opacity: 0;
+    transform: translateX(100px);
+    }
+    to{
+    opacity: 1;
+    transform: translateX(0);
+    }
+    
+    
+}
+
+/*Menu de Gêneros*/
+#menugeneros{
+    display: none;
+    margin-bottom: -10%;
+    
+}
+
+#menugeneros > ul{
+    list-style-type: none;
+}
+
+#menugeneros > ul > li> a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(68, 68, 68);
+    color:white;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+#menugeneros > ul > li> a:hover{
+    background:gray;
+}
+
+#FiltroGeneros{
+    background-color: rgb(71, 71, 71);
+    color: white;
+    cursor: pointer;
+    width:29.7vw;
+    text-align: center;
+    padding: 10px;
+    cursor:pointer;
+    margin-bottom: -29px;
+}
+
+#FiltroGeneros:hover{
+    background-color: white;
+    color:black;
+}
